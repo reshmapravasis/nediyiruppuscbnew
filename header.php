@@ -7,7 +7,7 @@
 
 <nav class="sticky top-0 bg-white shadow-md z-50 py-3 px-8 flex justify-between items-center">
     <a href="index.php" class="flex items-center">
-        <img src="images/Logo.png" alt="Nediyiruppu SCB" class="h-28 w-auto object-contain">
+        <img src="images/Logo_trimmed.png" alt="Nediyiruppu SCB" class="h-16 w-auto object-contain">
     </a>
 
     <ul class="hidden lg:flex space-x-6 font-medium">

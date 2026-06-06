@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nediyiruppu SCB - Modern Banking</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind-config.js"></script>
 </head>
 
 <body class="bg-gray-50 font-sans text-gray-900">
@@ -15,7 +16,7 @@
     <main>
 
 
-        <div class="bg-gradient-to-r from-blue-900 to-blue-700 py-16 text-center text-white">
+        <div class="bg-gradient-to-r from-[#0d4d6e] to-[#1d9c8d] py-16 text-center text-white">
             <div class="absolute inset-0 bg-black opacity-20"></div>
             <div class="relative z-10 px-6">
                 <h1 class="text-5xl font-bold mb-4">Our Legacy of Trust</h1>
@@ -52,33 +53,18 @@
                 <div class="rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white ring-1 ring-gray-200">
                     <img src="images/banner5.jpg" class="w-full h-full object-cover">
                 </div>
-                <div>
-
-                    <p>The <span style="color:#0d4d6e; font-size:1.2em; font-weight:bold;">Nediyiruppu Service
-                            Co-Operative
-                            Bank Ltd.</span> (D-1934), established on May 14, 1965, is a Class 1 Special Grade Service
-                        Co-operative Bank headquartered in Kodangad P.O., Kondotty, Malappuram District, Kerala.
-                        Registered
-                        under the Kerala Co-operative Societies Act, the bank has been a cornerstone in promoting
-                        financial
-                        inclusion and cooperative banking in the region.
-
-                        Over the decades, the bank has expanded its services to meet the evolving needs of its members
-                        and
-                        the community. Our offerings include savings and current accounts, fixed deposits, agricultural
-                        and
-                        personal loans, and other financial products tailored to support the economic growth of our
-                        members.
-
-                        Beyond banking, the Nediyiruppu Service Co-Operative Bank is deeply committed to social
-                        responsibility.</p>
-
-                    <p>We actively participate in community development initiatives, such as donating computers to local
-                        health centers, thereby enhancing public health infrastructure.
-
-                        Our mission is to provide reliable, member-centric financial services while fostering community
-                        development and economic empowerment. We adhere to principles of transparency, integrity, and
-                        cooperative values, ensuring that our members' interests are always at the forefront.
+                <div class="space-y-6 text-gray-700 leading-relaxed tracking-wide text-lg">
+                    <p>
+                        The <strong class="text-blue-900 text-xl">Nediyiruppu Service Co-Operative Bank Ltd.</strong> (D-1934), established on May 14, 1965, is a Class 1 Special Grade Service Co-operative Bank headquartered in Kodangad P.O., Kondotty, Malappuram District, Kerala. Registered under the Kerala Co-operative Societies Act, the bank has been a cornerstone in promoting financial inclusion and cooperative banking in the region.
+                    </p>
+                    <p>
+                        Over the decades, the bank has expanded its services to meet the evolving needs of its members and the community. Our offerings include savings and current accounts, fixed deposits, agricultural and personal loans, and other financial products tailored to support the economic growth of our members.
+                    </p>
+                    <p>
+                        Beyond banking, the Nediyiruppu Service Co-Operative Bank is deeply committed to social responsibility. We actively participate in community development initiatives, such as donating computers to local health centers, thereby enhancing public health infrastructure.
+                    </p>
+                    <p>
+                        Our mission is to provide reliable, member-centric financial services while fostering community development and economic empowerment. We adhere to principles of transparency, integrity, and cooperative values, ensuring that our members' interests are always at the forefront.
                     </p>
                 </div>
             </div>

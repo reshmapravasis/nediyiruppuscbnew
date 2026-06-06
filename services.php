@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nediyiruppu SCB - Modern Banking</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind-config.js"></script>
 </head>
 
 <body class="bg-gray-50 font-sans text-gray-900">
@@ -17,50 +18,121 @@
 
 
     <main>
-        <div class="bg-gradient-to-r from-blue-900 to-blue-700 py-16 text-center text-white">
+                <div class="bg-gradient-to-r from-[#0d4d6e] to-[#1d9c8d] py-16 text-center text-white">
             <h1 class="text-4xl font-extrabold mb-2">Banking Services</h1>
             <p class="opacity-80">Flexible financial solutions tailored for the community.</p>
         </div>
 
-        <section class="max-w-6xl mx-auto py-16 px-6">
-            <div class="grid md:grid-cols-2 gap-12">
-
-                <div class="space-y-6">
-                    <h3 class="text-2xl font-bold text-green-700 border-b-2 border-green-200 pb-2 flex items-center">
-                        <span class="mr-3">🏦</span> Deposit Schemes
-                    </h3>
-                    <div class="bg-white p-6 rounded-xl shadow-md border hover:border-green-500 transition">
-                        <h4 class="font-bold text-lg text-blue-900">Savings Bank Account</h4>
-                        <p class="text-gray-500 text-sm mt-1">Start your savings journey with us.</p>
-                        <button class="mt-4 text-green-600 font-bold text-sm underline">View Rates →</button>
-                    </div>
-                    <div class="bg-white p-6 rounded-xl shadow-md border hover:border-green-500 transition">
-                        <h4 class="font-bold text-lg text-blue-900">Fixed & Recurring Deposits</h4>
-                        <p class="text-gray-500 text-sm mt-1">Grow your wealth with high interest.</p>
-                        <button class="mt-4 text-green-600 font-bold text-sm underline">Details →</button>
+        <section class="max-w-6xl mx-auto py-16 px-6 space-y-16">
+            
+            <!-- Gold Loan -->
+            <div class="flex flex-col md:flex-row items-center gap-10 bg-white rounded-[2rem] p-10 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] border border-gray-100 hover:shadow-2xl transition-shadow duration-500">
+                <div class="md:w-1/3 flex justify-center">
+                    <div class="w-40 h-40 bg-gradient-to-br from-yellow-300 to-yellow-500 rounded-full flex items-center justify-center shadow-lg transform rotate-3">
+                        <span class="text-7xl">✨</span>
                     </div>
                 </div>
-
-                <div class="space-y-6">
-                    <h3 class="text-2xl font-bold text-blue-800 border-b-2 border-blue-200 pb-2 flex items-center">
-                        <span class="mr-3">💰</span> Loan Products
-                    </h3>
-                    <div class="bg-blue-50 p-6 rounded-xl shadow-md border-2 border-blue-200">
-                        <div class="flex justify-between items-start">
-                            <h4 class="font-bold text-lg text-blue-900">Gold Loan</h4>
-                            <span class="bg-yellow-400 text-xs font-bold px-2 py-1 rounded">FASTEST</span>
-                        </div>
-                        <p class="text-gray-600 text-sm mt-1">Instant approval with low interest rates.</p>
-                        <button class="mt-4 w-full bg-blue-900 text-white py-2 rounded-lg font-bold">Apply Now</button>
-                    </div>
-                    <div class="bg-white p-6 rounded-xl shadow-md border hover:border-blue-500 transition">
-                        <h4 class="font-bold text-lg text-blue-900">Agricultural & Personal Loans</h4>
-                        <p class="text-gray-500 text-sm mt-1">Supporting farmers and local businesses.</p>
-                        <button class="mt-4 text-blue-800 font-bold text-sm underline">Learn More →</button>
+                <div class="md:w-2/3 space-y-4">
+                    <div class="inline-block px-4 py-1 bg-yellow-100 text-yellow-800 font-bold rounded-full text-xs tracking-wide uppercase">Fastest Processing</div>
+                    <h2 class="text-3xl font-extrabold text-blue-900">Gold Loan</h2>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        Unlock the true value of your gold instantly. We offer the highest per-gram rate in the market with absolute security for your assets and minimal documentation.
+                    </p>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 text-gray-700 font-medium">
+                        <li class="flex items-center gap-3"><svg class="w-6 h-6 text-green-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Instant Cash Disbursal</li>
+                        <li class="flex items-center gap-3"><svg class="w-6 h-6 text-green-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Lowest Interest Rates</li>
+                        <li class="flex items-center gap-3"><svg class="w-6 h-6 text-green-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Flexible Repayment</li>
+                        <li class="flex items-center gap-3"><svg class="w-6 h-6 text-green-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> 100% Secure Storage</li>
+                    </ul>
+                    <div class="pt-4">
+                        <a href="gold-loan.php" class="inline-flex items-center gap-2 bg-yellow-500 text-white font-bold px-6 py-2 rounded-full hover:bg-yellow-600 transition-colors">
+                            Explore Gold Loan <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </a>
                     </div>
                 </div>
-
             </div>
+
+            <!-- Deposits -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-10 bg-white rounded-[2rem] p-10 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] border border-gray-100 hover:shadow-2xl transition-shadow duration-500">
+                <div class="md:w-1/3 flex justify-center">
+                    <div class="w-40 h-40 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center shadow-lg transform -rotate-3">
+                        <span class="text-7xl">💰</span>
+                    </div>
+                </div>
+                <div class="md:w-2/3 space-y-4">
+                    <div class="inline-block px-4 py-1 bg-green-100 text-green-800 font-bold rounded-full text-xs tracking-wide uppercase">High Returns</div>
+                    <h2 class="text-3xl font-extrabold text-blue-900">Deposits</h2>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        Secure your hard-earned money while making it grow. We provide a variety of deposit schemes designed to offer maximum returns safely over time.
+                    </p>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 text-gray-700 font-medium">
+                        <li class="flex items-center gap-3"><svg class="w-6 h-6 text-blue-600 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Savings Accounts</li>
+                        <li class="flex items-center gap-3"><svg class="w-6 h-6 text-blue-600 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Fixed Deposits (FD)</li>
+                        <li class="flex items-center gap-3"><svg class="w-6 h-6 text-blue-600 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Recurring Deposits (RD)</li>
+                        <li class="flex items-center gap-3"><svg class="w-6 h-6 text-blue-600 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Senior Citizen Benefits</li>
+                    </ul>
+                    <div class="pt-4">
+                        <a href="deposits.php" class="inline-flex items-center gap-2 bg-green-600 text-white font-bold px-6 py-2 rounded-full hover:bg-green-700 transition-colors">
+                            Explore Deposits <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Loans & Advances -->
+            <div class="flex flex-col md:flex-row items-center gap-10 bg-white rounded-[2rem] p-10 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] border border-gray-100 hover:shadow-2xl transition-shadow duration-500">
+                <div class="md:w-1/3 flex justify-center">
+                    <div class="w-40 h-40 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center shadow-lg transform rotate-3">
+                        <span class="text-7xl">🏠</span>
+                    </div>
+                </div>
+                <div class="md:w-2/3 space-y-4">
+                    <div class="inline-block px-4 py-1 bg-blue-100 text-blue-800 font-bold rounded-full text-xs tracking-wide uppercase">Empowering You</div>
+                    <h2 class="text-3xl font-extrabold text-blue-900">Loans & Advances</h2>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        Whether you are building a home, buying a vehicle, or funding your child's education, our flexible loan products are tailored to turn your dreams into reality.
+                    </p>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 text-gray-700 font-medium">
+                        <li class="flex items-center gap-3"><svg class="w-6 h-6 text-green-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Agricultural Loans</li>
+                        <li class="flex items-center gap-3"><svg class="w-6 h-6 text-green-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Personal & Vehicle Loans</li>
+                        <li class="flex items-center gap-3"><svg class="w-6 h-6 text-green-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Business Advances</li>
+                        <li class="flex items-center gap-3"><svg class="w-6 h-6 text-green-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Minimal Paperwork</li>
+                    </ul>
+                    <div class="pt-4">
+                        <a href="loans.php" class="inline-flex items-center gap-2 bg-blue-600 text-white font-bold px-6 py-2 rounded-full hover:bg-blue-700 transition-colors">
+                            Explore Loans <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Non Banking Services -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-10 bg-white rounded-[2rem] p-10 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] border border-gray-100 hover:shadow-2xl transition-shadow duration-500">
+                <div class="md:w-1/3 flex justify-center">
+                    <div class="w-40 h-40 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center shadow-lg transform -rotate-3">
+                        <span class="text-7xl">📱</span>
+                    </div>
+                </div>
+                <div class="md:w-2/3 space-y-4">
+                    <div class="inline-block px-4 py-1 bg-purple-100 text-purple-800 font-bold rounded-full text-xs tracking-wide uppercase">Value Added</div>
+                    <h2 class="text-3xl font-extrabold text-blue-900">Non Banking Services</h2>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        We go beyond traditional banking. Pay your bills, manage insurance, and handle digital services conveniently under one roof.
+                    </p>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 text-gray-700 font-medium">
+                        <li class="flex items-center gap-3"><svg class="w-6 h-6 text-blue-600 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Utility Bill Payments</li>
+                        <li class="flex items-center gap-3"><svg class="w-6 h-6 text-blue-600 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Insurance Processing</li>
+                        <li class="flex items-center gap-3"><svg class="w-6 h-6 text-blue-600 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> RTGS / NEFT Transfers</li>
+                        <li class="flex items-center gap-3"><svg class="w-6 h-6 text-blue-600 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Digital Assistance</li>
+                    </ul>
+                    <div class="pt-4">
+                        <a href="non-banking.php" class="inline-flex items-center gap-2 bg-purple-600 text-white font-bold px-6 py-2 rounded-full hover:bg-purple-700 transition-colors">
+                            Explore Services <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </main>
     <div id="footer-placeholder"></div>

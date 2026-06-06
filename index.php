@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nediyiruppu SCB</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind-config.js"></script>
 </head>
 
 <body class="bg-gray-50 font-sans text-gray-900">
@@ -18,55 +19,55 @@
                 <div class="slide absolute inset-0 transition-opacity duration-1000 opacity-100">
                     <img src="images/banner1.png" class="w-full h-full object-cover">
                     <div
-                        class="absolute inset-0 bg-blue-900/60 flex items-center justify-center text-center text-white px-10">
-                        <div>
-                            <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Empowering the Community</h1>
-                            <p class="text-lg opacity-90 max-w-2xl mx-auto">Providing trusted financial services since
-                                1965.</p>
+                        class="absolute inset-0 bg-white/20 flex items-center justify-start text-left text-blue-900 px-10 md:px-20">
+                        <div class="drop-shadow-[0_2px_10px_rgba(255,255,255,0.8)] max-w-3xl">
+                            <!-- <h1 class="text-white text-3xl md:text-5xl font-bold mb-4">Empowering the Community</h1>
+                            <p class="text-white text-lg opacity-90 font-medium">Providing trusted financial services since
+                                1965.</p> -->
                         </div>
                     </div>
                 </div>
                 <div class="slide absolute inset-0 transition-opacity duration-1000 opacity-0">
                     <img src="images/banner2.png" class="w-full h-full object-cover">
                     <div
-                        class="absolute inset-0 bg-blue-800/60 flex items-center justify-center text-center text-white px-10">
-                        <div>
-                            <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Secure Gold Loans</h1>
-                            <p class="text-lg opacity-90 max-w-2xl mx-auto">Get instant cash with the lowest interest
-                                rates.</p>
+                        class="absolute inset-0 bg-white/20 flex items-center justify-start text-left text-blue-900 px-10 md:px-20">
+                        <div class="drop-shadow-[0_2px_10px_rgba(255,255,255,0.8)] max-w-3xl">
+                            <!-- <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Secure Gold Loans</h1>
+                            <p class="text-lg opacity-90 font-medium">Get instant cash with the lowest interest
+                                rates.</p> -->
                         </div>
                     </div>
                 </div>
                 <div class="slide absolute inset-0 transition-opacity duration-1000 opacity-0">
                     <img src="images/banner3.jpg" class="w-full h-full object-cover">
                     <div
-                        class="absolute inset-0 bg-blue-900/70 flex items-center justify-center text-center text-white px-10">
-                        <div>
-                            <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Modern Savings</h1>
-                            <p class="text-lg opacity-90 max-w-2xl mx-auto">Grow your wealth with our Fixed & Recurring
-                                Deposits.</p>
+                        class="absolute inset-0 bg-white/20 flex items-center justify-start text-left text-blue-900 px-10 md:px-20">
+                        <div class="drop-shadow-[0_2px_10px_rgba(255,255,255,0.8)] max-w-3xl">
+                            <!-- <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Modern Savings</h1>
+                            <p class="text-lg opacity-90 font-medium">Grow your wealth with our Fixed & Recurring
+                                Deposits.</p> -->
                         </div>
                     </div>
                 </div>
                 <div class="slide absolute inset-0 transition-opacity duration-1000 opacity-0">
                     <img src="images/banner4.jpg" class="w-full h-full object-cover">
                     <div
-                        class="absolute inset-0 bg-blue-800/60 flex items-center justify-center text-center text-white px-10">
-                        <div>
-                            <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Agricultural Support</h1>
-                            <p class="text-lg opacity-90 max-w-2xl mx-auto">Empowering local farmers with specialized
-                                loan products.</p>
+                        class="absolute inset-0 bg-white/20 flex items-center justify-start text-left text-blue-900 px-10 md:px-20">
+                        <div class="drop-shadow-[0_2px_10px_rgba(255,255,255,0.8)] max-w-3xl">
+                            <!-- <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Agricultural Support</h1>
+                            <p class="text-lg opacity-90 font-medium">Empowering local farmers with specialized
+                                loan products.</p> -->
                         </div>
                     </div>
                 </div>
                 <div class="slide absolute inset-0 transition-opacity duration-1000 opacity-0">
                     <img src="images/banner5.jpg" class="w-full h-full object-cover">
                     <div
-                        class="absolute inset-0 bg-blue-900/60 flex items-center justify-center text-center text-white px-10">
-                        <div>
-                            <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Digital Banking</h1>
-                            <p class="text-lg opacity-90 max-w-2xl mx-auto">Experience seamless banking with our portal
-                                login.</p>
+                        class="absolute inset-0 bg-white/20 flex items-center justify-start text-left text-blue-900 px-10 md:px-20">
+                        <div class="drop-shadow-[0_2px_10px_rgba(255,255,255,0.8)] max-w-3xl">
+                            <!-- <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Digital Banking</h1>
+                            <p class="text-lg opacity-90 font-medium">Experience seamless banking with our portal
+                                login.</p> -->
                         </div>
                     </div>
                 </div>
@@ -80,18 +81,30 @@
             </marquee>
         </div>
 
-        <section id="about" class="py-16 px-10">
-            <h2 class="text-3xl font-bold text-center mb-12">Who are We?</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="rounded-[2rem] overflow-hidden shadow-2xl">
-                    <img src="images/banner3.jpg" class="w-full h-full object-cover">
+        <section id="about" class="py-16 px-10 max-w-7xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-center mb-16 text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-green-600">
+                Who are We?
+            </h2>
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="relative rounded-[2rem] overflow-hidden shadow-2xl group">
+                    <img src="images/banner3.jpg" class="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute bottom-0 left-0 bg-gradient-to-r from-blue-900 to-green-600 text-white px-8 py-4 rounded-tr-3xl shadow-lg">
+                        <span class="text-4xl font-extrabold">50+</span>
+                        <span class="block text-sm font-semibold opacity-90 tracking-wider uppercase mt-1">Years of Trust</span>
+                    </div>
                 </div>
-                <div>
-                    <span style="color:#0d4d6e; font-size:1.2em; font-weight:bold;">Nediyiruppu Service Co-Operative
-                        Bank Ltd. (D-1934),</span>
-                    <p class="text-gray-600 mb-4">established on May 14, 1965, is a Class 1 Special Grade Service
+                <div class="space-y-6">
+                    <h3 class="text-2xl md:text-3xl font-bold text-blue-900 leading-tight">
+                        Nediyiruppu Service Co-Operative Bank Ltd. (D-1934)
+                    </h3>
+                    <div class="w-24 h-1.5 bg-gradient-to-r from-green-500 to-blue-900 rounded-full"></div>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        Established on <strong class="text-gray-800">May 14, 1965</strong>, we are a Class 1 Special Grade Service
                         Co-operative Bank headquartered in Kodangad P.O., Kondotty, Malappuram District, Kerala.
-                        Registered under the Kerala Co-operative Societies Act...</p>
+                    </p>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        Registered under the Kerala Co-operative Societies Act, we have been a pillar of financial stability and growth for the local community, offering trusted financial services and empowering our members.
+                    </p>
                 </div>
             </div>
 
@@ -163,27 +176,32 @@
             </div>
         </section>
 
-        <section id="services" class="py-16 px-10">
-            <h2 class="text-3xl font-bold text-center mb-12">Our Financial Products</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div
-                    class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition text-center border-b-4 border-green-500">
-                    <div class="text-4xl mb-4">💰</div>
-                    <h3 class="text-xl font-bold mb-2">Deposits</h3>
-                    <p class="text-gray-600 mb-4">Secure your future with our various saving schemes.</p>
+        <section id="services" class="py-16 px-10 bg-gray-50">
+            <h2 class="text-3xl font-bold text-center text-blue-900 mb-12">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 text-center border-b-4 border-yellow-500 group">
+                    <div class="w-20 h-20 mx-auto bg-yellow-50 rounded-full flex items-center justify-center text-4xl mb-6 group-hover:scale-110 transition-transform">✨</div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">Gold Loan</h3>
+                    <h4 class="text-green-600 font-bold mb-3">Instant Cash</h4>
+                    <p class="text-gray-600 text-sm">Highest per-gram rate with minimum documentation for your immediate needs.</p>
                 </div>
-                <div
-                    class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition text-center border-b-4 border-blue-500">
-                    <div class="text-4xl mb-4">🏠</div>
-                    <h3 class="text-xl font-bold mb-2">Loans & Advances</h3>
-                    <p class="text-gray-600 mb-4">Easy processing and low interest rates for your dreams.</p>
+                <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 text-center border-b-4 border-green-500 group">
+                    <div class="w-20 h-20 mx-auto bg-green-50 rounded-full flex items-center justify-center text-4xl mb-6 group-hover:scale-110 transition-transform">💰</div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">Deposits</h3>
+                    <h4 class="text-green-600 font-bold mb-3">High Returns</h4>
+                    <p class="text-gray-600 text-sm">Secure your future with our various saving and fixed deposit schemes.</p>
                 </div>
-                <div
-                    class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition text-center border-b-4 border-yellow-500">
-                    <div class="text-4xl mb-4">✨</div>
-                    <h3 class="text-xl font-bold mb-2">Gold Loan</h3>
-                    <h4 class="text-green-600 font-bold">Instant Cash</h4>
-                    <p class="text-gray-600 mb-4">Highest per-gram rate with minimum documentation.</p>
+                <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 text-center border-b-4 border-blue-500 group">
+                    <div class="w-20 h-20 mx-auto bg-blue-50 rounded-full flex items-center justify-center text-4xl mb-6 group-hover:scale-110 transition-transform">🏠</div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">Loans & Advances</h3>
+                    <h4 class="text-green-600 font-bold mb-3">Easy Processing</h4>
+                    <p class="text-gray-600 text-sm">Low interest rates and flexible repayment options for your personal dreams.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 text-center border-b-4 border-purple-500 group">
+                    <div class="w-20 h-20 mx-auto bg-purple-50 rounded-full flex items-center justify-center text-4xl mb-6 group-hover:scale-110 transition-transform">📱</div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">Non Banking Services</h3>
+                    <h4 class="text-green-600 font-bold mb-3">Value Added</h4>
+                    <p class="text-gray-600 text-sm">Utility bill payments, insurance, digital services and more under one roof.</p>
                 </div>
             </div>
         </section>

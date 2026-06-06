@@ -8,12 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nediyiruppu SCB - Modern Banking</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind-config.js"></script>
 </head>
 
 <body class="bg-gray-50 font-sans text-gray-900">
     <div id="header-placeholder"></div>
     <main>
-        <div class="bg-gradient-to-r from-blue-900 to-blue-700 py-16 text-center text-white">
+        <div class="bg-gradient-to-r from-[#0d4d6e] to-[#1d9c8d] py-16 text-center text-white">
             <h1 class="text-4xl font-extrabold mb-2">Contact Us</h1>
             <p class="opacity-80">We are here to help you with your banking needs.</p>
         </div>
