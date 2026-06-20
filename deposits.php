@@ -15,41 +15,76 @@
             <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">Deposit Schemes</h1>
             <p class="mt-4 text-lg opacity-80 font-light">Secure your hard-earned money while making it grow.</p>
         </div>
-        <section class="max-w-4xl mx-auto py-16 px-6">
-            <div class="bg-white rounded-[2rem] shadow-xl p-8 md:p-12 border-t-4 border-green-500 relative overflow-hidden">
-                <div class="absolute top-0 right-0 p-8 opacity-5">
-                    <span class="text-9xl">💰</span>
-                </div>
-                <div class="text-center mb-10 relative z-10">
-                    <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <span class="text-4xl">💰</span>
-                    </div>
-                    <h2 class="text-3xl font-bold text-blue-900">Our Deposit Products</h2>
-                </div>
-                <div class="space-y-6 text-gray-700 leading-relaxed text-lg relative z-10">
-                    <p>We offer a variety of deposit schemes designed to offer maximum returns safely over time. Whether you are saving for a rainy day or planning for the future, we have a plan that fits your needs.</p>
-                    
-                    <div class="space-y-6 mt-8">
-                        <div class="p-6 border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition bg-gray-50">
-                            <h3 class="text-xl font-bold text-blue-900 mb-2">Savings Bank Account</h3>
-                            <p class="text-sm">Start your savings journey with absolute flexibility. Enjoy easy access to your funds while earning a steady interest rate. Ideal for daily transactions and building a financial cushion.</p>
-                        </div>
-                        
-                        <div class="p-6 border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition bg-gray-50">
-                            <h3 class="text-xl font-bold text-blue-900 mb-2">Fixed Deposits (FD)</h3>
-                            <p class="text-sm">Lock in your funds for a specific tenure and enjoy guaranteed, high-interest returns. We offer flexible tenures ranging from a few months to several years, with special premium rates for senior citizens.</p>
-                        </div>
+        
 
-                        <div class="p-6 border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition bg-gray-50">
-                            <h3 class="text-xl font-bold text-blue-900 mb-2">Recurring Deposits (RD)</h3>
-                            <p class="text-sm">Build a significant corpus by saving small, fixed amounts every month. A disciplined way to save that offers interest rates comparable to Fixed Deposits.</p>
-                        </div>
-                    </div>
 
-                    <div class="mt-12 text-center">
-                        <a href="contact.php" class="inline-block bg-[#0d4d6e] text-white font-bold px-10 py-4 rounded-full hover:bg-[#1d9c8d] transition-all transform hover:-translate-y-1 shadow-lg">Contact Us for Interest Rates</a>
-                    </div>
+        <!-- Detailed Deposit Products -->
+        <section class="max-w-6xl mx-auto px-6 space-y-12 pb-20">
+            
+            <!-- Savings Deposits -->
+            <div class="flex flex-col md:flex-row items-center gap-10 bg-white rounded-[2rem] p-8 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] border border-gray-100 hover:shadow-2xl transition-shadow duration-500">
+                <div class="md:w-1/2">
+                    <img src="images/sb.png" alt="Savings Deposits" class="w-full h-[300px] md:h-[400px] object-cover rounded-2xl shadow-lg">
                 </div>
+                <div class="md:w-1/2 space-y-4">
+                    <div class="inline-block px-4 py-1 bg-green-100 text-green-800 font-bold rounded-full text-xs tracking-wide uppercase">Everyday Banking</div>
+                    <h3 class="text-3xl font-extrabold text-[#0d4d6e]">Savings Deposits</h3>
+                    <p class="text-gray-600 text-lg leading-relaxed">Start your savings journey with absolute flexibility.</p>
+                    <ul class="space-y-3 pt-2 text-gray-700 font-medium">
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-green-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Helps you save money regularly and build financial security</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-green-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Earn attractive interest on your deposits</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-green-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Flexible deposits and withdrawals to suit your needs</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-green-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Suitable for individuals and families</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-green-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Provides a safe and secure place to keep your money</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Daily Deposit -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-10 bg-white rounded-[2rem] p-8 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] border border-gray-100 hover:shadow-2xl transition-shadow duration-500">
+                <div class="md:w-1/2">
+                    <img src="images/dd.jpg" alt="Daily Deposit" class="w-full h-[300px] md:h-[400px] object-cover rounded-2xl shadow-lg">
+                </div>
+                <div class="md:w-1/2 space-y-4">
+                    <div class="inline-block px-4 py-1 bg-yellow-100 text-yellow-800 font-bold rounded-full text-xs tracking-wide uppercase">Consistent Growth</div>
+                    <h3 class="text-3xl font-extrabold text-[#0d4d6e]">Daily Deposit</h3>
+                    <p class="text-gray-600 text-lg leading-relaxed">Save small amounts every day and build a habit of regular saving.</p>
+                    <ul class="space-y-3 pt-2 text-gray-700 font-medium">
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-yellow-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Earn attractive interest on your accumulated balance</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-yellow-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Flexible and convenient for daily wage earners</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-yellow-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Promotes financial discipline and savings growth</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-yellow-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Easy access to your funds when needed</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Fixed Deposits -->
+            <div class="flex flex-col md:flex-row items-center gap-10 bg-white rounded-[2rem] p-8 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] border border-gray-100 hover:shadow-2xl transition-shadow duration-500">
+                <div class="md:w-1/2">
+                    <img src="images/Dep1.jpg" alt="Fixed Deposits" class="w-full h-[300px] md:h-[400px] object-cover rounded-2xl shadow-lg">
+                </div>
+                <div class="md:w-1/2 space-y-4">
+                    <div class="inline-block px-4 py-1 bg-blue-100 text-blue-800 font-bold rounded-full text-xs tracking-wide uppercase">High Returns</div>
+                    <h3 class="text-3xl font-extrabold text-[#0d4d6e]">Fixed Deposits</h3>
+                    <p class="text-gray-600 text-lg leading-relaxed">Lock in your funds for a specific tenure and enjoy guaranteed, high-interest returns.</p>
+                    <ul class="space-y-3 pt-2 text-gray-700 font-medium">
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-blue-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Earn higher interest compared to regular accounts</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-blue-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Safe and secure investment with guaranteed returns</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-blue-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Choose from flexible tenures to suit your goals</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-blue-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Option for automatic renewal at maturity</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center flex flex-col md:flex-row items-center justify-center gap-6">
+                <a href="contact.php" class="inline-flex items-center gap-2 bg-[#0d4d6e] text-white font-bold px-10 py-4 rounded-full hover:bg-[#1d9c8d] transition-all transform hover:-translate-y-1 shadow-lg text-lg">
+                    Contact Us for Interest Rates
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                </a>
+                <a href="services.php" class="inline-flex items-center gap-2 bg-white text-[#0d4d6e] border-2 border-[#0d4d6e] font-bold px-10 py-3.5 rounded-full hover:bg-gray-50 transition-all transform hover:-translate-y-1 shadow-lg text-lg group">
+                    <svg class="w-5 h-5 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                    Back to All Services
+                </a>
             </div>
         </section>
     </main>

@@ -74,9 +74,9 @@
             </div>
         </section>
 
-        <div class="bg-yellow-50 border-y border-yellow-200 py-3 flex items-center">
-            <div class="bg-red-600 text-white px-4 py-1 text-xs font-bold rounded-r-lg z-10">LATEST NEWS</div>
-            <marquee id="news-marquee" class="text-blue-900 font-medium text-sm" scrollamount="6">
+        <div class="bg-yellow-50 border-y border-yellow-200 flex items-center">
+            <div class="bg-[#0d4d6e] text-white px-4 py-4 text-xs font-bold rounded-r-lg z-10 shrink-0 whitespace-nowrap">LATEST NEWS</div>
+            <marquee id="news-marquee" class="text-blue-900 font-medium text-sm ml-2" scrollamount="6">
                 Loading news...
             </marquee>
         </div>
@@ -140,7 +140,7 @@
             <div class="text-center mt-12">
                 <a href="about.php"
                     class="inline-flex items-center bg-blue-900 text-white px-8 py-3 rounded-full font-bold hover:bg-green-700 transition-colors shadow-lg">Read
-                    More About Our Team</a>
+                    More</a>
             </div>
         </section>
 

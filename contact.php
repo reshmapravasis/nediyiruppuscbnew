@@ -65,6 +65,38 @@
 
             </div>
         </section>
+
+        <!-- Key Contacts Grid -->
+        <section class="max-w-6xl mx-auto px-6 pb-20">
+            <h3 class="text-2xl font-bold text-center text-[#0d4d6e] mb-10">Key Personnel Contacts</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                
+                <!-- President -->
+                <div class="bg-[#1d9c8d] text-white py-8 px-4 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] text-center transform hover:-translate-y-1 transition-transform duration-300">
+                    <p class="text-[15px] tracking-wide font-medium opacity-90 mb-3">President</p>
+                    <p class="text-2xl font-bold tracking-wider">9633 79 82 37</p>
+                </div>
+
+                <!-- Vice President -->
+                <div class="bg-[#0d4d6e] text-white py-8 px-4 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] text-center transform hover:-translate-y-1 transition-transform duration-300">
+                    <p class="text-[15px] tracking-wide font-medium opacity-90 mb-3">Vice President</p>
+                    <p class="text-2xl font-bold tracking-wider">9656 50 68 89</p>
+                </div>
+
+                <!-- Secretary -->
+                <div class="bg-[#1d9c8d] text-white py-8 px-4 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] text-center transform hover:-translate-y-1 transition-transform duration-300">
+                    <p class="text-[15px] tracking-wide font-medium opacity-90 mb-3">Secretary</p>
+                    <p class="text-2xl font-bold tracking-wider">9847 03 92 23</p>
+                </div>
+
+                <!-- HO Manager -->
+                <div class="bg-[#0d4d6e] text-white py-8 px-4 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] text-center transform hover:-translate-y-1 transition-transform duration-300">
+                    <p class="text-[15px] tracking-wide font-medium opacity-90 mb-3">HO Manager</p>
+                    <p class="text-2xl font-bold tracking-wider">9746 73 92 02</p>
+                </div>
+
+            </div>
+        </section>
     </main>
 
     <div id="footer-placeholder"></div>

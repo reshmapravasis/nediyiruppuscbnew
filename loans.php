@@ -15,44 +15,108 @@
             <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">Loans & Advances</h1>
             <p class="mt-4 text-lg opacity-80 font-light">Flexible financial solutions tailored to turn your dreams into reality.</p>
         </div>
-        <section class="max-w-4xl mx-auto py-16 px-6">
-            <div class="bg-white rounded-[2rem] shadow-xl p-8 md:p-12 border-t-4 border-blue-500 relative overflow-hidden">
-                <div class="absolute top-0 right-0 p-8 opacity-5">
-                    <span class="text-9xl">🏠</span>
-                </div>
-                <div class="text-center mb-10 relative z-10">
-                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <span class="text-4xl">🏠</span>
-                    </div>
-                    <h2 class="text-3xl font-bold text-blue-900">Empowering Your Growth</h2>
-                </div>
-                <div class="space-y-6 text-gray-700 leading-relaxed text-lg relative z-10">
-                    <p>Whether you are building a home, buying a vehicle, funding your child's education, or expanding your business, Nediyiruppu SCB is here to support you with flexible and affordable credit options.</p>
-                    
-                    <h3 class="text-xl font-bold text-blue-900 mt-8 mb-4 border-b pb-2">Our Loan Products</h3>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                        <div class="p-5 border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition">
-                            <h4 class="font-bold text-lg text-blue-900 flex items-center gap-2"><span class="text-2xl">🌾</span> Agricultural Loans</h4>
-                            <p class="text-sm mt-2">Specialized financial support for farmers, covering crop cultivation, equipment purchase, and farming infrastructure at subsidized interest rates.</p>
-                        </div>
-                        <div class="p-5 border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition">
-                            <h4 class="font-bold text-lg text-blue-900 flex items-center gap-2"><span class="text-2xl">🚗</span> Vehicle Loans</h4>
-                            <p class="text-sm mt-2">Drive home your dream car or two-wheeler with our quick-processing vehicle loans featuring easy EMIs.</p>
-                        </div>
-                        <div class="p-5 border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition">
-                            <h4 class="font-bold text-lg text-blue-900 flex items-center gap-2"><span class="text-2xl">🏡</span> Housing Loans</h4>
-                            <p class="text-sm mt-2">Build or renovate your home with long-term repayment options and highly competitive interest rates.</p>
-                        </div>
-                        <div class="p-5 border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition">
-                            <h4 class="font-bold text-lg text-blue-900 flex items-center gap-2"><span class="text-2xl">💼</span> Business Advances</h4>
-                            <p class="text-sm mt-2">Boost your business capital, manage inventory, or expand operations with our tailored commercial credit facilities.</p>
-                        </div>
-                    </div>
+        
 
-                    <div class="mt-12 text-center">
-                        <a href="downloads.php" class="inline-block bg-[#0d4d6e] text-white font-bold px-10 py-4 rounded-full hover:bg-[#1d9c8d] transition-all transform hover:-translate-y-1 shadow-lg">Download Application Forms</a>
-                    </div>
+
+        <!-- Detailed Loan Products -->
+        <section class="max-w-6xl mx-auto px-6 space-y-12 pb-20">
+            
+            <!-- Property Loan -->
+            <div class="flex flex-col md:flex-row items-center gap-10 bg-white rounded-[2rem] p-8 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] border border-gray-100 hover:shadow-2xl transition-shadow duration-500">
+                <div class="md:w-1/2">
+                    <img src="images/propert.png" alt="Property Loan" class="w-full h-[300px] md:h-[400px] object-cover rounded-2xl shadow-lg">
                 </div>
+                <div class="md:w-1/2 space-y-4">
+                    <div class="inline-block px-4 py-1 bg-blue-100 text-blue-800 font-bold rounded-full text-xs tracking-wide uppercase">Secured</div>
+                    <h3 class="text-3xl font-extrabold text-[#0d4d6e]">Property Loan</h3>
+                    <p class="text-gray-600 text-lg leading-relaxed">Get funding against your property for personal or business needs.</p>
+                    <ul class="space-y-3 pt-2 text-gray-700 font-medium">
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-green-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Competitive interest rates</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-green-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Flexible repayment tenure</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-green-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Loan based on property value</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-green-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Simple documentation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Pronote Loan -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-10 bg-white rounded-[2rem] p-8 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] border border-gray-100 hover:shadow-2xl transition-shadow duration-500">
+                <div class="md:w-1/2">
+                    <img src="images/pronot.jpg" alt="Pronote Loan" class="w-full h-[300px] md:h-[400px] object-cover rounded-2xl shadow-lg">
+                </div>
+                <div class="md:w-1/2 space-y-4">
+                    <div class="inline-block px-4 py-1 bg-green-100 text-green-800 font-bold rounded-full text-xs tracking-wide uppercase">Quick Finance</div>
+                    <h3 class="text-3xl font-extrabold text-[#0d4d6e]">Pronote Loan</h3>
+                    <p class="text-gray-600 text-lg leading-relaxed">For buying electronics, appliances, or other consumer goods. Short-term financial help based on a promissory note.</p>
+                    <ul class="space-y-3 pt-2 text-gray-700 font-medium">
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-blue-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Quick processing</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-blue-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Minimal documentation</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-blue-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Ideal for urgent cash needs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Consumer Loan -->
+            <div class="flex flex-col md:flex-row items-center gap-10 bg-white rounded-[2rem] p-8 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] border border-gray-100 hover:shadow-2xl transition-shadow duration-500">
+                <div class="md:w-1/2">
+                    <img src="images/consu.jpg" alt="Consumer Loan" class="w-full h-[300px] md:h-[400px] object-cover rounded-2xl shadow-lg">
+                </div>
+                <div class="md:w-1/2 space-y-4">
+                    <div class="inline-block px-4 py-1 bg-purple-100 text-purple-800 font-bold rounded-full text-xs tracking-wide uppercase">Easy EMIs</div>
+                    <h3 class="text-3xl font-extrabold text-[#0d4d6e]">Consumer Loan</h3>
+                    <p class="text-gray-600 text-lg leading-relaxed">For buying electronics, appliances, or other consumer goods.</p>
+                    <ul class="space-y-3 pt-2 text-gray-700 font-medium">
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-purple-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Affordable EMIs</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-purple-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Attractive interest rates</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-purple-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Flexible loan amount and term</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Deposit Loan -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-10 bg-white rounded-[2rem] p-8 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] border border-gray-100 hover:shadow-2xl transition-shadow duration-500">
+                <div class="md:w-1/2">
+                    <img src="images/deposit.jpg" alt="Deposit Loan" class="w-full h-[300px] md:h-[400px] object-cover rounded-2xl shadow-lg">
+                </div>
+                <div class="md:w-1/2 space-y-4">
+                    <div class="inline-block px-4 py-1 bg-yellow-100 text-yellow-800 font-bold rounded-full text-xs tracking-wide uppercase">Smart Borrowing</div>
+                    <h3 class="text-3xl font-extrabold text-[#0d4d6e]">Deposit Loan</h3>
+                    <p class="text-gray-600 text-lg leading-relaxed">Get a loan against your fixed deposits with us.</p>
+                    <ul class="space-y-3 pt-2 text-gray-700 font-medium">
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-yellow-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Low interest</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-yellow-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> No need to break your FD</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-yellow-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Instant approval</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Kudumbashree Loan -->
+            <div class="flex flex-col md:flex-row items-center gap-10 bg-white rounded-[2rem] p-8 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] border border-gray-100 hover:shadow-2xl transition-shadow duration-500">
+                <div class="md:w-1/2">
+                    <img src="images/kudumb.jpg" alt="Kudumbashree Loan" class="w-full h-[300px] md:h-[400px] object-cover rounded-2xl shadow-lg">
+                </div>
+                <div class="md:w-1/2 space-y-4">
+                    <div class="inline-block px-4 py-1 bg-teal-100 text-teal-800 font-bold rounded-full text-xs tracking-wide uppercase">Community First</div>
+                    <h3 class="text-3xl font-extrabold text-[#0d4d6e]">Kudumbashree Loan</h3>
+                    <p class="text-gray-600 text-lg leading-relaxed">Linkage loan schemes for Kudumbashree group members.</p>
+                    <ul class="space-y-3 pt-2 text-gray-700 font-medium">
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-teal-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Empowering women entrepreneurs</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-teal-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Group-based loan model</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-teal-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Subsidized interest (if applicable)</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-teal-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Capacity-building and support</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center flex flex-col md:flex-row items-center justify-center gap-6">
+                <a href="downloads.php" class="inline-flex items-center gap-2 bg-[#0d4d6e] text-white font-bold px-10 py-4 rounded-full hover:bg-[#1d9c8d] transition-all transform hover:-translate-y-1 shadow-lg text-lg">
+                    Download Application Forms 
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                </a>
+                <a href="services.php" class="inline-flex items-center gap-2 bg-white text-[#0d4d6e] border-2 border-[#0d4d6e] font-bold px-10 py-3.5 rounded-full hover:bg-gray-50 transition-all transform hover:-translate-y-1 shadow-lg text-lg group">
+                    <svg class="w-5 h-5 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                    Back to All Services
+                </a>
             </div>
         </section>
     </main>

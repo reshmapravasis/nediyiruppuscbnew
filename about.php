@@ -27,22 +27,49 @@
             </div>
         </div>
 
-        <section class="max-w-6xl mx-auto -mt-12 px-6 grid md:grid-cols-2 gap-8 relative z-20">
-            <div class="bg-white p-10 rounded-2xl shadow-xl border-b-4 border-green-500">
-                <div class="text-green-600 text-4xl mb-4">🎯</div>
-                <h2 class="text-2xl font-bold text-blue-900 mb-4">Our Mission</h2>
-                <p class="text-gray-600 leading-relaxed">
-                    To provide accessible, transparent, and inclusive financial services that uplift our members and
-                    strengthen
-                    our community's economic fabric.
+        <section class="max-w-7xl mx-auto -mt-16 px-6 grid md:grid-cols-3 gap-8 relative z-20">
+            <!-- Mission Card -->
+            <div class="relative bg-white p-10 rounded-[2.5rem] shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 group overflow-hidden border border-gray-100">
+                <div class="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-green-50 to-green-100 rounded-bl-full -mr-10 -mt-10 transition-transform duration-700 group-hover:scale-[2.5] z-0 opacity-70"></div>
+                
+                <div class="relative z-10 w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center text-3xl mb-8 border border-green-100 group-hover:-rotate-12 group-hover:scale-110 transition-transform duration-500">
+                    🎯
+                </div>
+                
+                <h2 class="relative z-10 text-2xl font-extrabold text-blue-950 mb-4 group-hover:text-green-600 transition-colors duration-300">Our Mission</h2>
+                <div class="relative z-10 w-12 h-1 bg-green-500 rounded-full mb-6 group-hover:w-24 transition-all duration-500"></div>
+                <p class="relative z-10 text-gray-600 leading-relaxed group-hover:text-gray-800 transition-colors duration-300">
+                    To provide accessible, transparent, and inclusive financial services that uplift our members and strengthen our community's economic fabric.
                 </p>
             </div>
-            <div class="bg-white p-10 rounded-2xl shadow-xl border-b-4 border-blue-500">
-                <div class="text-blue-600 text-4xl mb-4">👁️</div>
-                <h2 class="text-2xl font-bold text-blue-900 mb-4">Our Vision</h2>
-                <p class="text-gray-600 leading-relaxed">
-                    To be a modern, member-first co-operative bank balancing tradition with innovation for long-term
-                    prosperity.
+
+            <!-- Vision Card -->
+            <div class="relative bg-white p-10 rounded-[2.5rem] shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 group overflow-hidden border border-gray-100">
+                <div class="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-blue-50 to-blue-100 rounded-bl-full -mr-10 -mt-10 transition-transform duration-700 group-hover:scale-[2.5] z-0 opacity-70"></div>
+                
+                <div class="relative z-10 w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center text-3xl mb-8 border border-blue-100 group-hover:-rotate-12 group-hover:scale-110 transition-transform duration-500">
+                    👁️
+                </div>
+                
+                <h2 class="relative z-10 text-2xl font-extrabold text-blue-950 mb-4 group-hover:text-blue-600 transition-colors duration-300">Our Vision</h2>
+                <div class="relative z-10 w-12 h-1 bg-blue-500 rounded-full mb-6 group-hover:w-24 transition-all duration-500"></div>
+                <p class="relative z-10 text-gray-600 leading-relaxed group-hover:text-gray-800 transition-colors duration-300">
+                    To become a modern, member-first co-operative bank that balances tradition with innovation—ensuring long-term prosperity for all.
+                </p>
+            </div>
+
+            <!-- Legacy Card -->
+            <div class="relative bg-white p-10 rounded-[2.5rem] shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 group overflow-hidden border border-gray-100">
+                <div class="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-purple-50 to-purple-100 rounded-bl-full -mr-10 -mt-10 transition-transform duration-700 group-hover:scale-[2.5] z-0 opacity-70"></div>
+                
+                <div class="relative z-10 w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center text-3xl mb-8 border border-purple-100 group-hover:-rotate-12 group-hover:scale-110 transition-transform duration-500">
+                    🏛️
+                </div>
+                
+                <h2 class="relative z-10 text-2xl font-extrabold text-blue-950 mb-4 group-hover:text-purple-600 transition-colors duration-300">Our Legacy</h2>
+                <div class="relative z-10 w-12 h-1 bg-purple-500 rounded-full mb-6 group-hover:w-24 transition-all duration-500"></div>
+                <p class="relative z-10 text-gray-600 leading-relaxed group-hover:text-gray-800 transition-colors duration-300">
+                    We are more than a bank—we are a people’s movement rooted in cooperation and service.
                 </p>
             </div>
         </section>
@@ -277,7 +304,7 @@
                 <div class="text-center group">
                     <div
                         class="relative w-32 h-32 mx-auto mb-4 overflow-hidden rounded-full border-4 border-white shadow-lg ring-2 ring-gray-100 group-hover:ring-green-500 transition-all duration-300">
-                        <img src="directors/" alt="Secretary"
+                        <img src="data:image/svg+xml;utf8,%3Csvg width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='24' height='24' fill='%23F3F4F6'/%3E%3Cpath d='M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z' fill='%239CA3AF'/%3E%3C/svg%3E" alt="Director Avatar"
                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
 
                         <div
