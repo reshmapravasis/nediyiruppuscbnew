@@ -16,7 +16,7 @@ while ($row = mysqli_fetch_assoc($imageResult)) {
     $media[] = ['type' => 'image', 'url' => $row['img_location'], 'title' => $row['title']];
 }
 while ($row = mysqli_fetch_assoc($videoResult)) {
-    $media[] = ['type' => 'video', 'url' => $row['video_location'], 'title' => $row['title']];
+    $media[] = ['type' => 'video', 'url' => $row['vdo_location'], 'title' => $row['title']];
 }
 
 // Sort by latest (assuming both tables have 'date')
@@ -33,6 +33,7 @@ usort($media, function($a, $b) {
 <title>Gallery - Nediyiruppu SCB</title>
 <script src="https://cdn.tailwindcss.com"></script>
     <script src="tailwind-config.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 
 <body class="bg-gray-50 font-sans text-gray-900">
@@ -65,7 +66,23 @@ usort($media, function($a, $b) {
                                  alt="<?= htmlspecialchars($item['title']) ?>"
                                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                         <?php else: ?>
-                            <video src="<?= htmlspecialchars($item['url']) ?>" class="w-full h-full object-cover" muted></video>
+                            <?php if (strpos($item['url'], 'youtube.com') !== false || strpos($item['url'], 'youtu.be') !== false): 
+                                // Extract YouTube ID
+                                preg_match('%(?:youtube(?:-nocookie)?\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|.*[?&]v=)|youtu\.be/)([^"&?/\s]{11})%i', $item['url'], $match);
+                                $youtube_id = $match[1] ?? '';
+                            ?>
+                                <?php if ($youtube_id): ?>
+                                    <img src="https://img.youtube.com/vi/<?= $youtube_id ?>/hqdefault.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                                <?php endif; ?>
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <svg class="w-16 h-16 text-red-600 opacity-90 drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.377.55a3.016 3.016 0 0 0-2.122 2.136C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.55 9.376.55 9.376.55s7.505 0 9.377-.55a3.016 3.016 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                                </div>
+                            <?php else: ?>
+                                <video src="<?= htmlspecialchars($item['url']) ?>" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" muted preload="metadata"></video>
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <svg class="w-16 h-16 text-white opacity-80 drop-shadow-lg" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+                                </div>
+                            <?php endif; ?>
                         <?php endif; ?>
 
                         <?php if (!empty($item['title'])): ?>
@@ -89,6 +106,7 @@ usort($media, function($a, $b) {
     
     <img id="fs-image" class="max-w-full max-h-full transition-all duration-300 hidden">
     <video id="fs-video" class="max-w-full max-h-full transition-all duration-300 hidden" controls autoplay></video>
+    <iframe id="fs-youtube" class="w-full h-full max-w-4xl max-h-[80vh] transition-all duration-300 hidden" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 <script>
@@ -103,16 +121,32 @@ loadComponent('footer-placeholder', 'footer.php');
 const fsContainer = document.getElementById('fs-container');
 const fsImage = document.getElementById('fs-image');
 const fsVideo = document.getElementById('fs-video');
+const fsYoutube = document.getElementById('fs-youtube');
 
 function launchFullScreen(url, type) {
+    fsImage.classList.add('hidden');
+    fsVideo.classList.add('hidden');
+    fsYoutube.classList.add('hidden');
+    fsImage.src = '';
+    fsVideo.src = '';
+    fsYoutube.src = '';
+
     if (type === 'image') {
         fsImage.src = url;
         fsImage.classList.remove('hidden');
-        fsVideo.classList.add('hidden');
     } else if (type === 'video') {
-        fsVideo.src = url;
-        fsVideo.classList.remove('hidden');
-        fsImage.classList.add('hidden');
+        if (url.includes('youtube.com') || url.includes('youtu.be')) {
+            let videoId = '';
+            const match = url.match(/(?:youtube(?:-nocookie)?\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/i);
+            if(match && match[1]) {
+                videoId = match[1];
+            }
+            fsYoutube.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+            fsYoutube.classList.remove('hidden');
+        } else {
+            fsVideo.src = url;
+            fsVideo.classList.remove('hidden');
+        }
     }
 
     fsContainer.classList.remove('hidden');
@@ -140,8 +174,10 @@ function handleFsExit() {
         fsContainer.classList.remove('flex');
         fsImage.src = '';
         fsVideo.src = '';
+        fsYoutube.src = '';
         fsImage.classList.add('hidden');
         fsVideo.classList.add('hidden');
+        fsYoutube.classList.add('hidden');
     }
 }
 

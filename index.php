@@ -7,6 +7,7 @@
     <title>Nediyiruppu SCB</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="tailwind-config.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 
 <body class="bg-gray-50 font-sans text-gray-900">

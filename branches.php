@@ -9,6 +9,7 @@
     <title>Nediyiruppu SCB - Modern Banking</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="tailwind-config.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 
 <body class="bg-gray-50 font-sans text-gray-900">
@@ -66,9 +67,11 @@
                                 <span class="text-sm font-medium">10:00 AM - 05:00 PM(Mon - Sat)</span>
                             </div>
                         </div>
-                        <button
-                            class="w-full mt-8 bg-blue-50 text-blue-700 font-bold py-3 rounded-xl group-hover:bg-blue-900 group-hover:text-white transition">Get
-                            Directions</button>
+                        <a href="https://maps.app.goo.gl/zRbqGB6LJ7PhVtKo7"
+                            target="_blank"
+                            class="block text-center w-full mt-8 bg-blue-50 text-blue-700 font-bold py-3 rounded-xl group-hover:bg-blue-900 group-hover:text-white transition">
+                            Get Directions
+                        </a>
                     </div>
                 </div>
 
@@ -89,9 +92,11 @@
                                 <span class="text-sm font-medium">10:00 AM - 05:00 PM(Mon - Sat)</span>
                             </div>
                         </div>
-                        <button
-                            class="w-full mt-8 bg-blue-50 text-blue-700 font-bold py-3 rounded-xl group-hover:bg-blue-900 group-hover:text-white transition">Get
-                            Directions</button>
+                        <a href="https://maps.app.goo.gl/D8EPAYJYrTVtQsG1A"
+                            target="_blank"
+                            class="block text-center w-full mt-8 bg-blue-50 text-blue-700 font-bold py-3 rounded-xl group-hover:bg-blue-900 group-hover:text-white transition">
+                            Get Directions
+                        </a>
                     </div>
                 </div>
 
