@@ -1,7 +1,4 @@
 <?php
 session_save_path(sys_get_temp_dir());
 session_start();
-session_destroy();
-header("Location: login.php");
-exit();
-?>
+echo "Session save path is: " . session_save_path();
