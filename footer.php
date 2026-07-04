@@ -1,4 +1,7 @@
-<?php session_start(); ?>
+<?php
+session_save_path(__DIR__ . '/sessions');
+session_start();
+?>
 
 <footer class="bg-gradient-to-br from-blue-900 to-green-600 text-white">
     <div class="max-w-7xl mx-auto px-6 py-14">

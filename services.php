@@ -1,5 +1,8 @@
 
-<?php session_start(); ?>
+<?php
+session_save_path(__DIR__ . '/sessions');
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 

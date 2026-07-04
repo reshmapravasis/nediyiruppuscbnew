@@ -1,4 +1,7 @@
-<?php session_start(); ?>
+<?php
+session_save_path(__DIR__ . '/sessions');
+session_start();
+?>
 
 <div class="bg-blue-900 text-white text-sm py-2 px-6 flex justify-between items-center">
     <div>📧 info@nediyiruppuscb.com | 📞 0483 2712067</div>
