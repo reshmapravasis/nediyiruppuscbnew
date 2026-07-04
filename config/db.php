@@ -2,7 +2,7 @@
 $host = "localhost";
 $user = "root";          // change if hosting
 $pass = "admin@123";              // change if hosting
-$db   = "nediyiruppu";
+$db   = "nediyiru_db_nedi";
 
 $conn = mysqli_connect($host, $user, $pass, $db);
 
