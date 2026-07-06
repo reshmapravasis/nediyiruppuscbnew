@@ -3,14 +3,21 @@ session_save_path(sys_get_temp_dir());
 session_start();
 include 'config/db.php';
 
-// Fetch images
 $imageResult = mysqli_query($conn, "SELECT * FROM tbl_photos WHERE status = 1 ORDER BY date DESC");
+
+if (!$imageResult) {
+    die("Gallery Error: " . mysqli_error($conn));
+}
+
 $hasImages = mysqli_num_rows($imageResult) > 0;
 
-// Fetch videos
 $videoResult = mysqli_query($conn, "SELECT * FROM tbl_video WHERE status = 1 ORDER BY date DESC");
-$hasVideos = mysqli_num_rows($videoResult) > 0;
 
+if (!$videoResult) {
+    die("Video Error: " . mysqli_error($conn));
+}
+
+$hasVideos = mysqli_num_rows($videoResult) > 0;
 // Merge for grid display (optional: you can interleave by date if needed)
 $media = [];
 while ($row = mysqli_fetch_assoc($imageResult)) {

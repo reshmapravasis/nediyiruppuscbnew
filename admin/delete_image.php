@@ -1,4 +1,5 @@
 <?php
+session_save_path(__DIR__ . '/../sessions');
 require_once 'auth.php';
 require_once '../config/db.php';
 
@@ -21,7 +22,9 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     // Delete record
     $delStmt = $conn->prepare("DELETE FROM tbl_photos WHERE id = ?");
     $delStmt->bind_param("i", $id);
-    $delStmt->execute();
+   if (!$delStmt->execute()) {
+    die("Delete Image Error: " . $delStmt->error);
+}
     $delStmt->close();
 }
 

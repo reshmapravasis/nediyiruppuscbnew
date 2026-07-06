@@ -21,7 +21,9 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     // Delete record
     $delStmt = $conn->prepare("DELETE FROM tbl_news WHERE news_id = ?");
     $delStmt->bind_param("i", $newsId);
-    $delStmt->execute();
+    if (!$delStmt->execute()) {
+    die("Delete News Error: " . $delStmt->error);
+}
     $delStmt->close();
 }
 
