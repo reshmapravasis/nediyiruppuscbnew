@@ -1,68 +1,89 @@
 <?php
+session_save_path(sys_get_temp_dir());
 require_once 'auth.php';
 require_once '../config/db.php';
 
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
     $title = trim($_POST['title'] ?? '');
     $videoType = $_POST['video_type'] ?? 'url';
     $vdoLocation = '';
 
-    if ($videoType === 'url') {
+    // ----------------------------
+    // YouTube / URL
+    // ----------------------------
+    if ($videoType == "url") {
+
         $vdoLocation = trim($_POST['video_url'] ?? '');
+
         if (empty($vdoLocation)) {
-            header("Location: dashboard.php?error=invalid&tab=videos");
-            exit();
+            die("Please enter a video URL.");
         }
-    } else if ($videoType === 'upload') {
-        if (isset($_FILES['video_file']) && $_FILES['video_file']['error'] !== UPLOAD_ERR_NO_FILE) {
-            $file = $_FILES['video_file'];
-            $allowTypes = ['mp4', 'webm', 'ogg'];
-            $fileType = strtolower(pathinfo($file['name'], PATHINFO_EXTENSION));
 
-            if (!in_array($fileType, $allowTypes)) {
-                header("Location: dashboard.php?error=type&tab=videos");
-                exit();
-            }
-
-            // Short unique filename
-            $fileName = substr(md5(time() . basename($file['name'])), 0, 15) . '.' . $fileType;
-            // Need to make sure this dir exists
-            $targetDir = "../images/video/";
-            if (!is_dir($targetDir)) {
-                mkdir($targetDir, 0755, true);
-            }
-            
-            $targetFilePath = $targetDir . $fileName;
-
-            if (move_uploaded_file($file['tmp_name'], $targetFilePath)) {
-                $vdoLocation = "images/video/" . $fileName;
-            } else {
-                header("Location: dashboard.php?error=upload&tab=videos");
-                exit();
-            }
-        } else {
-            header("Location: dashboard.php?error=upload&tab=videos");
-            exit();
-        }
     }
 
-    $status = 1;
-    $stmt = $conn->prepare("INSERT INTO tbl_video (title, vdo_location, status) VALUES (?, ?, ?)");
-    $stmt->bind_param("ssi", $title, $vdoLocation, $status);
-    
-    if ($stmt->execute()) {
-        $stmt->close();
-        header("Location: dashboard.php?msg=success&tab=videos");
-        exit();
-    } else {
-        $stmt->close();
-        if ($videoType === 'upload' && file_exists("../" . $vdoLocation)) {
+    // ----------------------------
+    // Upload Video
+    // ----------------------------
+    elseif ($videoType == "upload") {
+
+        if (!isset($_FILES['video_file']) || $_FILES['video_file']['error'] != UPLOAD_ERR_OK) {
+            die("Please select a video.");
+        }
+
+        $allowed = ['mp4', 'webm', 'ogg'];
+
+        $ext = strtolower(pathinfo($_FILES['video_file']['name'], PATHINFO_EXTENSION));
+
+        if (!in_array($ext, $allowed)) {
+            die("Only MP4, WEBM and OGG files are allowed.");
+        }
+
+        $uploadDir = "../images/video/";
+
+        if (!is_dir($uploadDir)) {
+            mkdir($uploadDir, 0755, true);
+        }
+
+        $fileName = time() . "_" . uniqid() . "." . $ext;
+
+        $uploadPath = $uploadDir . $fileName;
+
+        if (!move_uploaded_file($_FILES['video_file']['tmp_name'], $uploadPath)) {
+            die("Video upload failed.");
+        }
+
+        $vdoLocation = "images/video/" . $fileName;
+    }
+
+    // ----------------------------
+    // Insert into database
+    // ----------------------------
+    $stmt = $conn->prepare("INSERT INTO tbl_video (title, vdo_location) VALUES (?, ?)");
+
+    if (!$stmt) {
+        die("Prepare Error: " . $conn->error);
+    }
+
+    $stmt->bind_param("ss", $title, $vdoLocation);
+
+    if (!$stmt->execute()) {
+
+        if ($videoType == "upload" && file_exists("../" . $vdoLocation)) {
             unlink("../" . $vdoLocation);
         }
-        header("Location: dashboard.php?error=db&tab=videos");
-        exit();
+
+        die("Database Error: " . $stmt->error);
     }
+
+    $stmt->close();
+
+    header("Location: dashboard.php?tab=videos&msg=success");
+    exit();
 }
 
-header("Location: dashboard.php?error=invalid&tab=videos");
+header("Location: dashboard.php?tab=videos");
 exit();
