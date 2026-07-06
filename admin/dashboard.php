@@ -1,8 +1,8 @@
 <?php
 require_once 'auth.php';
 require_once '../config/db.php';
-echo "Dashboard loaded successfully";
-exit;
+// echo "Dashboard loaded successfully";
+// exit;
 
 // Fetch News
 $newsResult = $conn->query("SELECT * FROM tbl_news ORDER BY news_id DESC");
