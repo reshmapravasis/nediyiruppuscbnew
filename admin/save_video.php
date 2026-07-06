@@ -69,7 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Prepare Error: " . $conn->error);
     }
 
-    $stmt->bind_param("sss", $title, $vdoLocation);
+    $stmt->bind_param("sss", $title, $vdoLocation, $vdoDate);
 
     if (!$stmt->execute()) {
 

@@ -44,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Prepare Error: " . $conn->error);
     }
 
-    $stmt->bind_param("sss", $newsHead, $newsContent, $newsImg, $newsDate);
+    $stmt->bind_param("ssss", $newsHead, $newsContent, $newsImg, $newsDate);
 
     if (!$stmt->execute()) {
         die("Insert Error: " . $stmt->error);
