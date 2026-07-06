@@ -11,6 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $title = trim($_POST['title'] ?? '');
     $videoType = $_POST['video_type'] ?? 'url';
     $vdoLocation = '';
+    $vdoDate = date("Y-m-d H:i:s");
 
     // ----------------------------
     // YouTube / URL
@@ -62,13 +63,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // ----------------------------
     // Insert into database
     // ----------------------------
-    $stmt = $conn->prepare("INSERT INTO tbl_video (title, vdo_location) VALUES (?, ?)");
+    $stmt = $conn->prepare("INSERT INTO tbl_video (title, vdo_location, date) VALUES (?, ?, ?)");
 
     if (!$stmt) {
         die("Prepare Error: " . $conn->error);
     }
 
-    $stmt->bind_param("ss", $title, $vdoLocation);
+    $stmt->bind_param("sss", $title, $vdoLocation);
 
     if (!$stmt->execute()) {
 

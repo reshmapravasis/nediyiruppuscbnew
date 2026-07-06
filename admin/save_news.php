@@ -9,6 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $newsHead = trim($_POST['news_head']);
     $newsContent = trim($_POST['news_content']);
+    $newsDate = date("Y-m-d H:i:s");
 
     if (empty($newsHead) || empty($newsContent)) {
         die("Heading or content is empty.");
@@ -37,13 +38,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $newsImg = "images/news/" . $fileName;
     }
 
-    $stmt = $conn->prepare("INSERT INTO tbl_news (news_head, news_content, news_img) VALUES (?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO tbl_news (news_head, news_content, news_img, news_date) VALUES (?, ?, ?, ?)");
 
     if (!$stmt) {
         die("Prepare Error: " . $conn->error);
     }
 
-    $stmt->bind_param("sss", $newsHead, $newsContent, $newsImg);
+    $stmt->bind_param("sss", $newsHead, $newsContent, $newsImg, $newsDate);
 
     if (!$stmt->execute()) {
         die("Insert Error: " . $stmt->error);
