@@ -3,7 +3,7 @@ session_save_path(sys_get_temp_dir());
 session_start();
 include 'config/db.php';
 
-$imageResult = mysqli_query($conn, "SELECT * FROM tbl_photos WHERE status = 1 ORDER BY date DESC");
+$imageResult = mysqli_query($conn, "SELECT * FROM tbl_photos ORDER BY id DESC");
 
 if (!$imageResult) {
     die("Gallery Error: " . mysqli_error($conn));
@@ -11,7 +11,7 @@ if (!$imageResult) {
 
 $hasImages = mysqli_num_rows($imageResult) > 0;
 
-$videoResult = mysqli_query($conn, "SELECT * FROM tbl_video WHERE status = 1 ORDER BY date DESC");
+$videoResult = mysqli_query($conn, "SELECT * FROM tbl_video ORDER BY id DESC");
 
 if (!$videoResult) {
     die("Video Error: " . mysqli_error($conn));
