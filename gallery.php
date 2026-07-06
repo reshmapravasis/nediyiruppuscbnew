@@ -3,7 +3,7 @@ session_save_path(sys_get_temp_dir());
 session_start();
 include 'config/db.php';
 
-$imageResult = mysqli_query($conn, "SELECT * FROM tbl_photos ORDER BY id DESC");
+$imageResult = mysqli_query($conn, "SELECT * FROM tbl_photos  ORDER BY id DESC");
 
 if (!$imageResult) {
     die("Gallery Error: " . mysqli_error($conn));

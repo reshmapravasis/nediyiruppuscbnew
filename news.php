@@ -4,7 +4,6 @@ include 'config/db.php';
 $newsQuery = mysqli_query(
     $conn,
     "SELECT * FROM tbl_news 
-     WHERE status = 1 
      ORDER BY news_date DESC"
 );
 ?>
