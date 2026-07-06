@@ -20,7 +20,7 @@ session_start();
     <main>
 
 
-        <div class="bg-gradient-to-r from-[#0d4d6e] to-[#1d9c8d] py-16 text-center text-white">
+        <div class="relative bg-gradient-to-r from-[#0d4d6e] to-[#1d9c8d] pt-16 pb-24 text-center text-white">
             <div class="absolute inset-0 bg-black opacity-20"></div>
             <div class="relative z-10 px-6">
                 <h1 class="text-5xl font-bold mb-4">Our Legacy of Trust</h1>
@@ -31,7 +31,7 @@ session_start();
             </div>
         </div>
 
-        <section class="max-w-7xl mx-auto -mt-16 px-6 grid md:grid-cols-3 gap-8 relative z-20">
+        <section class="max-w-7xl mx-auto -mt-12 px-6 grid md:grid-cols-3 gap-8 relative z-20">
             <!-- Mission Card -->
             <div class="relative bg-white p-10 rounded-[2.5rem] shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 group overflow-hidden border border-gray-100">
                 <div class="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-green-50 to-green-100 rounded-bl-full -mr-10 -mt-10 transition-transform duration-700 group-hover:scale-[2.5] z-0 opacity-70"></div>
