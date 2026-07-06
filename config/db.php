@@ -13,7 +13,7 @@ $db   = "nediyiru_db_nedi";
 $conn = mysqli_connect($host, $user, $pass, $db);
 
 if (!$conn) {
-    die("<h3>Database connection failed: " . htmlspecialchars(mysqli_connect_error()) . "</h3><p>Please check your cPanel MySQL Database username and password.</p>");
+    ie("Database connection failed: " . mysqli_connect_error());
 }
-?>
+
 
