@@ -16,6 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Hardcoded credentials for demonstration
     if ($username === 'admin' && $password === 'admin123') {
         $_SESSION['admin_logged_in'] = true;
+        session_write_close();
         header("Location: dashboard.php");
         exit();
     } else {
