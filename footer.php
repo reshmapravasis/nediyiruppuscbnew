@@ -102,3 +102,69 @@ session_start();
         </div>
     </div>
 </footer>
+
+<!-- Floating Action Buttons Styling -->
+<style>
+@keyframes whatsapp-breath {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
+  }
+  50% {
+    transform: scale(1.08);
+    box-shadow: 0 12px 35px rgba(37, 211, 102, 0.6), 0 0 0 10px rgba(37, 211, 102, 0.2);
+  }
+}
+.animate-whatsapp {
+  animation: whatsapp-breath 3s infinite ease-in-out;
+}
+.animate-whatsapp:hover {
+  animation-play-state: paused;
+  transform: scale(1.18) !important;
+  box-shadow: 0 15px 40px rgba(37, 211, 102, 0.7) !important;
+}
+</style>
+
+<!-- Floating Action Buttons -->
+<!-- WhatsApp Floating Button (Left Bottom) -->
+<a href="https://wa.me/919847039223?text=Hello%20Nediyiruppu%20SCB,%20I%20have%20a%20query." 
+   target="_blank" 
+   rel="noopener noreferrer" 
+   class="fixed bottom-6 left-6 z-50 w-12 h-12 md:w-14 md:h-14 rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white flex items-center justify-center transition-all duration-300 animate-whatsapp" 
+   aria-label="Chat on WhatsApp">
+    <svg class="w-6 h-6 md:w-7 md:h-7 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.262 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.722-1.465L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.863-9.864.001-2.637-1.03-5.115-2.905-6.99C16.55 1.87 14.077.84 11.44.842c-5.439 0-9.863 4.42-9.866 9.863-.002 1.815.485 3.591 1.41 5.161l-1.07 3.909 4.009-1.052zM17.91 14.88c-.33-.164-1.95-.963-2.25-1.07-.3-.11-.52-.165-.74.165-.22.33-.85 1.07-1.04 1.29-.19.22-.38.242-.71.077-1.63-.82-2.87-1.43-3.99-3.37-.3-.51.3-.47.86-1.59.09-.19.04-.35-.02-.51-.06-.164-.52-1.25-.71-1.72-.19-.45-.38-.39-.52-.39-.13 0-.29-.015-.45-.015-.16 0-.43.06-.65.3-.22.24-.85.83-.85 2.02 0 1.19.87 2.34.99 2.51.12.16 1.7 2.6 4.11 3.64.57.25 1.02.4 1.37.51.57.18 1.09.15 1.5.09.46-.07 1.95-.8 2.22-1.53.28-.73.28-1.36.19-1.5-.09-.13-.3-.22-.63-.38z"/>
+    </svg>
+</a>
+
+<!-- Scroll To Top Button (Right Bottom) -->
+<button id="scroll-to-top-btn" 
+        onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" 
+        class="fixed bottom-6 right-6 z-50 w-12 h-12 md:w-14 md:h-14 rounded-full bg-blue-900 hover:bg-green-600 text-white flex items-center justify-center shadow-lg hover:shadow-2xl opacity-0 pointer-events-none transition-all duration-300 hover:-translate-y-1 transform hover:scale-105" 
+        aria-label="Scroll to top">
+    <svg class="w-6 h-6 md:w-7 md:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+    </svg>
+</button>
+
+<!-- Script injector to execute scroll listener in dynamically loaded footer content -->
+<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3C/svg%3E" 
+     onload="(function(){
+         const btn = document.getElementById('scroll-to-top-btn');
+         if (btn) {
+             const checkScroll = () => {
+                 if (window.scrollY > 300) {
+                     btn.classList.remove('opacity-0', 'pointer-events-none');
+                     btn.classList.add('opacity-100');
+                 } else {
+                     btn.classList.remove('opacity-100');
+                     btn.classList.add('opacity-0', 'pointer-events-none');
+                 }
+             };
+             window.addEventListener('scroll', checkScroll);
+             checkScroll();
+         }
+     })()" 
+     class="hidden" 
+     alt="" />
+
